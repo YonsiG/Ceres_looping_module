@@ -1,19 +1,15 @@
 Author: GUYANXI
 Date: 02-09-2019
-Last Modified: 16-09-2019
+Last Modified: 02-03-2022
 
-This package is used for ZZZ BSM study.
+This package is used for general looping ntuples.
 
-All the source codes are stored in "source_code" folder.
-The final_state_study_4channels.C file is used for selecting final state and ee/mm/em/all channel study, seperately. The truth_level_study.C file is used for truth level 3 Zbosons study. The final_state_2F ( 1F2J / 4J ).C are used for 2fatjets ( 1fatjet+2jet / 4jets )
-Either of them need to be copied and renamed as "ZZZAna.C" for use.
+All the source codes are stored in "source_code" folder. The ZZZAna.h is for loading branches, initialize and save root files. The ZZZAna.C is the main looping and event selection code. The makeHists.h + makeHists.C is for making histgrams.
 
-<1> source ~/command.txt
+<1> source command.txt
 
-<2> cd source_code
-    ./gcc.sh
+<2> . gcc.sh
 
-<3> cd ../run 
-    ./run.sh
+<3> ./ZZZAna.exe filelist/filename.txt Signal
 
-<4> ./run_ZJet.sh
+
